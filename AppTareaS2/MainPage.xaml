@@ -7,8 +7,10 @@
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Sistema de Calificaciones" 
                    HorizontalTextAlignment="Center" 
-                   TextColor="White" FontSize="22"/>
+                   TextColor="White" FontSize="14"/>
         </Frame>
+
+        <Label x:Name="lblUsuario"/>
 
         <Grid>
             <Grid.RowDefinitions>

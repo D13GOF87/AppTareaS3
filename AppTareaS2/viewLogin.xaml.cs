@@ -17,9 +17,34 @@ namespace AppTareaS2
 			InitializeComponent();
 		}
 
-		private void btnIngresar_Clicked(object sender, EventArgs e)
-		{
 
+		private async void btnIngresar_Clicked(object sender, EventArgs e)
+		{
+			try {
+				String user = "";
+				int u = 0, c = 0;
+
+				if (txtUsuario.Text.Equals("estudiante2021"))
+				{
+					u = 1;
+					user = txtUsuario.Text;
+				}
+				else
+					await DisplayAlert("Error datos de usuario", "Usuario incorrecto", "Ok");
+
+				if (txtContrasena.Text.Equals("uisrael2021"))
+					c = 1;
+				else
+					await DisplayAlert("Error datos de usuario", "Contraseña incorrecta", "Ok");
+
+				if (u == 1 && c == 1)
+					await Navigation.PushAsync(new MainPage(user));
+			}
+			catch (Exception ex)
+			{
+				await DisplayAlert("Mensaje de alerta", ex.Message, "ok");
+			}
+			
 		}
 	}
 }

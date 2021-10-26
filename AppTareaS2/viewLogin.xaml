@@ -7,7 +7,7 @@
             <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
                 <Label Text="Sistema de Calificaciones" 
                    HorizontalTextAlignment="Center" 
-                   TextColor="White" FontSize="22"/>
+                   TextColor="White" FontSize="14"/>
             </Frame>
 
             <Grid>
@@ -25,10 +25,10 @@
                 <Entry x:Name="txtUsuario" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
 
                 <Label Text="Contraseña:" Grid.Row="1" Grid.Column="0"/>
-                <Entry x:Name="txtcontrasena" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtContrasena" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
             </Grid>                    
 
-            <Button x:Name="btnIngresar" Clicked="btnIngresar_Clicked"/>
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
