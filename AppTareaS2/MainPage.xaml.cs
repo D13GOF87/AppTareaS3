@@ -13,6 +13,7 @@ namespace AppTareaS2
 		public MainPage(String user)
 		{
 			InitializeComponent();
+			lblUsuario.Text = "Usuario: " + user;
 		}
 
 		private void btnEvaluar_Clicked(object sender, EventArgs e)

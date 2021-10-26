@@ -10,10 +10,9 @@
                    TextColor="White" FontSize="14"/>
         </Frame>
 
-        <Label x:Name="lblUsuario"/>
-
         <Grid>
             <Grid.RowDefinitions>
+                <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -31,29 +30,31 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Label Text="Nota Seguimiento Uno:" Grid.Row="0" Grid.Column="0"/>
-            <Entry x:Name="txtNotaUno" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+            <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0"/>
 
-            <Label Text="Examen Uno:" Grid.Row="1" Grid.Column="0"/>
-            <Entry x:Name="txtExamenUno" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="Nota Seguimiento Uno:" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtNotaUno" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
 
-            <Label Text="Nota Parcial Uno:" Grid.Row="2" Grid.Column="0"/>
-            <Entry x:Name="txtParcialUno" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="Examen Uno:" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtExamenUno" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
 
-            <Label Text="Nota Seguimiento Dos:" Grid.Row="4" Grid.Column="0"/>
-            <Entry x:Name="txtNotaDos" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"/>
+            <Label Text="Nota Parcial Uno:" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="txtParcialUno" IsReadOnly="True" Grid.Row="3" Grid.Column="1"/>
 
-            <Label Text="Examen Dos:" Grid.Row="5" Grid.Column="0"/>
-            <Entry x:Name="txtExamenDos" Keyboard="Numeric" Grid.Row="5" Grid.Column="1"/>
+            <Label Text="Nota Seguimiento Dos:" Grid.Row="5" Grid.Column="0"/>
+            <Entry x:Name="txtNotaDos" Keyboard="Numeric" Grid.Row="5" Grid.Column="1"/>
 
-            <Label Text="Nota Parcial Dos:" Grid.Row="6" Grid.Column="0"/>
-            <Entry x:Name="txtParcialDos" IsReadOnly="True" Grid.Row="6" Grid.Column="1"/>
+            <Label Text="Examen Dos:" Grid.Row="6" Grid.Column="0"/>
+            <Entry x:Name="txtExamenDos" Keyboard="Numeric" Grid.Row="6" Grid.Column="1"/>
 
-            <Label Text="Nota Final:" Grid.Row="8" Grid.Column="0"/>
-            <Entry x:Name="txtNotaFin" IsReadOnly="True" Grid.Row="8" Grid.Column="1"/>
+            <Label Text="Nota Parcial Dos:" Grid.Row="7" Grid.Column="0"/>
+            <Entry x:Name="txtParcialDos" IsReadOnly="True" Grid.Row="7" Grid.Column="1"/>
+
+            <Label Text="Nota Final:" Grid.Row="9" Grid.Column="0"/>
+            <Entry x:Name="txtNotaFin" IsReadOnly="True" Grid.Row="9" Grid.Column="1"/>
             
-            <Label Text="Estado:" Grid.Row="9" Grid.Column="0"/>
-            <Entry x:Name="txtEstado" IsReadOnly="True" Grid.Row="9" Grid.Column="1"/>
+            <Label Text="Estado:" Grid.Row="10" Grid.Column="0"/>
+            <Entry x:Name="txtEstado" IsReadOnly="True" Grid.Row="10" Grid.Column="1"/>
         </Grid>
 
         <Button x:Name="btnEvaluar" Text="Evaluar" Clicked="btnEvaluar_Clicked"/>
