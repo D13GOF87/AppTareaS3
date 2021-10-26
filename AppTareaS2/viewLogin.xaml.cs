@@ -16,5 +16,10 @@ namespace AppTareaS2
 		{
 			InitializeComponent();
 		}
+
+		private void btnIngresar_Clicked(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

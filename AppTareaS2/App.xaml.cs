@@ -10,7 +10,7 @@ namespace AppTareaS2
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new NavigationPage(new viewLogin());
 		}
 
 		protected override void OnStart()

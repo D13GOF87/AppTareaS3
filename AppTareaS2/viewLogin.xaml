@@ -4,9 +4,31 @@
              x:Class="AppTareaS2.viewLogin">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Sistema de Calificaciones" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" FontSize="22"/>
+            </Frame>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Contraseña:" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtcontrasena" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+            </Grid>                    
+
+            <Button x:Name="btnIngresar" Clicked="btnIngresar_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
